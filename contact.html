@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>شركة العقارات - اتصل بنا</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Tahoma", sans-serif;
+      background-color: #e6e6e6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      text-align: center;
+      direction: rtl;
+    }
+    header {
+      background-color: #1a1a40;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 10px 0;
+      flex: 1;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .logo img {
+      height: 60px;
+      cursor: pointer;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav ul li {
+      margin: 5px 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+    .accessibility-controls {
+      text-align: center;
+      margin: 15px 0;
+    }
+    .accessibility-controls button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #ffd700;
+      border: none;
+      border-radius: 5px;
+    }
+    main {
+      padding: 20px;
+    }
+    .form-box {
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: right;
+    }
+    .form-box label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    .form-box input, .form-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-box button {
+      background-color: #1a1a40;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-box button:hover {
+      background-color: #333;
+    }
+    footer {
+      background-color: #1a1a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #ffd700;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.2em; }
+      nav ul li a { font-size: 0.9em; }
+      .form-box { width: 90%; }
+      .accessibility-controls button { font-size: 14px; padding: 8px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="شعار شركة العقارات" /></a>
+    </div>
+    <h1>شركة العقارات</h1>
+  </header>
+
+  <nav aria-label="القائمة الرئيسية">
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="for-sale.html">عقارات للبيع</a></li>
+      <li><a href="for-rent.html">عقارات للإيجار</a></li>
+      <li><a href="about.html">من نحن</a></li>
+      <li><a href="services.html">خدماتنا</a></li>
+      <li><a href="contact.html">اتصل بنا</a></li>
+      <li><a href="blog.html">المدونة</a></li>
+      <li><a href="faq.html">الأسئلة الشائعة</a></li>
+    </ul>
+  </nav>
+
+  <div class="accessibility-controls">
+    <button onclick="increaseFont()">تكبير النص</button>
+    <button onclick="decreaseFont()">تصغير النص</button>
+    <button onclick="speakText()">قراءة النص</button>
+    <button onclick="toggleContrast()">تغيير اللون</button>
+  </div>
+
+  <main>
+    <section>
+      <h2>اتصل بنا</h2>
+      <p>يسعدنا تواصلكم معنا عبر النموذج التالي أو من خلال وسائل التواصل الاجتماعي.</p>
+
+      <div class="form-box">
+        <form>
+          <label for="name">الاسم:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">البريد الإلكتروني:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">الرسالة:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">إرسال</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>تابعونا على مواقع التواصل:</p>
+    <a href="https://facebook.com">فيسبوك</a>
+    <a href="https://instagram.com">إنستغرام</a>
+    <a href="https://twitter.com">تويتر</a>
+    <a href="https://linkedin.com">لينكدإن</a>
+    <p>© 2026 شركة العقارات - جميع الحقوق محفوظة</p>
+    <p><small>هذا الموقع مربوط بدومين واستضافة جاهزة</small></p>
+  </footer>
+
+<script>
+  let currentSize = 16;
+  function increaseFont() {
+    currentSize += 2;
+    document.body.style.fontSize = currentSize + "px";
+  }
+  function decreaseFont() {
+    if (currentSize > 10) {
+      currentSize -= 2;
+      document.body.style.fontSize = currentSize + "px";
+    }
+  }
+  function speakText() {
+    const msg = new SpeechSynthesisUtterance(document.body.innerText);
+    msg.lang = "ar";
+    window.speechSynthesis.speak(msg);
+  }
+  function toggleContrast() {
+    if (document.body.style.backgroundColor === "black") {
+      document.body.style.backgroundColor = "#e6e6e6";
+      document.body.style.color = "#333";
+    } else {
+      document.body.style.backgroundColor = "black";
+      document.body.style.color = "yellow";
+    }
+  }
+</script>
+</body>
+</html>
+
